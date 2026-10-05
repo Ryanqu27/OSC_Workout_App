@@ -3,6 +3,7 @@ import './App.css';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Brainrot from "./Components/Brainrot";
+import Timer from "./Components/Timer";
 import Home from './Pages/Home';
 
 function App() {
@@ -30,6 +31,11 @@ function App() {
           >
             Brainrot
           </NavLink>
+          <NavLink 
+            to="/timer" 
+          >
+            Timer
+          </NavLink>
         </nav>
 
         <div>
@@ -38,6 +44,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/brainrot" element={<Brainrot />} />
+            <Route path="/timer" element={<Timer />} />
           </Routes>
         </div>
       </div>
